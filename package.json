@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "gulp",
     "dist": "gulp prep",
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "archiver": "^1.3.0",
@@ -37,7 +39,8 @@
     "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "xss-filters": "^1.2.7"
+    "xss-filters": "^1.2.7",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "angular": "^1.6.2",
@@ -69,5 +72,6 @@
     "utf8": "^2.1.2",
     "uuid": "^3.0.1",
     "wallet-address-validator": "^0.1.0"
-  }
+  },
+  "snyk": true
 }
